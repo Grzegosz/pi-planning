@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Arctovsky",
+    "zoomUrl": "https://us04web.zoom.us/j/2019373634",
+    "meetingId": "123",
+    "image": "room1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Scott Base",
+    "zoomUrl": "https://us04web.zoom.us/j/2019373634",
+    "meetingId": "123213",
+    "image": "room2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Blonia",
+    "zoomUrl": "https://us04web.zoom.us/j/2019373634",
+    "meetingId": "123",
+    "image": "room3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Krakowskie Przedmiescie",
+    "zoomUrl": "https://us04web.zoom.us/j/2019373634",
+    "meetingId": "234",
+    "image": "room1.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Blef room",
+    "zoomUrl": "https://us04web.zoom.us/j/2019373634",
+    "meetingId": "234",
+    "image": "room2.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Blue Fin 602",
+    "zoomUrl": "https://us04web.zoom.us/j/2019373634",
+    "meetingId": "123213",
+    "image": "room3.jpg"
+  }
+]

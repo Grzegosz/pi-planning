@@ -1,0 +1,101 @@
+<div>
+  <div class="header">
+    <div class="top">
+      <div class="top-content">
+        <img src="../../assets/images/hsbc-logo.svg"/>
+        <ul class="top-menu">
+          <li (click)="onMenuSelected(1)" [ngClass]="{'active': selectedMenu===1}">
+            How to connect?
+          </li>
+          <li (click)="onMenuSelected(2)" [ngClass]="{'active': selectedMenu===2}">
+            Scheduler
+          </li>
+        </ul>
+      </div>
+      <div class="top-menu-details" *ngIf="selectedMenu > 0">
+        <div class="top-menu-details-container">
+          <div class="close-icon">
+            <img (click)="onMenuSelected(0)" src="../../assets/images/close-icon.png"/>
+          </div>
+
+          <div *ngIf="selectedMenu === 1" class="top-menu-content">
+            <div class="title">
+              How to connect?
+            </div>
+            <div class="text">
+              You need to click to room Zoom icon. Moze jakis obrazek tutaj? Jakas instrukcja jak polaczyc sie?
+            </div>
+          </div>
+
+          <div *ngIf="selectedMenu === 2" class="top-menu-content">
+            <div class="title">
+              Scheduler
+            </div>
+            <div class="text">
+              <div class="scheduler">
+                <div class="scheduler-day">
+                  <div class="title">
+                    Monday
+                  </div>
+                  <div class="divider"></div>
+                  <div>
+                    <ul>
+                      <li><span class="hour">9:00</span> Welcome session</li>
+                      <li><span class="hour">10:00</span> Coffee break</li>
+                      <li><span class="hour">10:15</span> Breakout session</li>
+                      <li><span class="hour">12:00</span> Lunch break</li>
+                      <li><span class="hour">13:00</span> Breakout session</li>
+                      <li><span class="hour">17:00</span> End of day</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="scheduler-day">
+                  <div class="title">
+                    Tuesday
+                  </div>
+                  <div class="divider"></div>
+                  <div>
+                    <ul>
+                      <li><span class="hour">9:00</span> Start session</li>
+                      <li><span class="hour">9:30</span> Team breakout</li>
+                      <li><span class="hour">12:00</span> Lunch break</li>
+                      <li><span class="hour">13:00</span> Team presentation</li>
+                      <li><span class="hour">16:00</span> End of day</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="scheduler-day">
+                  <div class="title">
+                    Wednesday
+                  </div>
+                  <div class="divider"></div>
+                  <div>
+                    <ul>
+                      <li><span class="hour">9:00</span> Start session</li>
+                      <li><span class="hour">9:30</span> Retrospective</li>
+                      <li><span class="hour">13:00</span> Summary session</li>
+                      <li><span class="hour">15:00</span> End of PI Planning</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="overlay"></div>
+      <div class="banner-text">
+        <div class="banner-text-title">Welcome on PI Planning</div>
+        <div class="banner-text-small">First ever HSBC online planning is happening! Please select room below and join
+          your team.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="selectedMenu > 0" class="page-overlay"></div>

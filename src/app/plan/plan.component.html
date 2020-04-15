@@ -1,0 +1,32 @@
+<div>
+  <div class="title">Rooms</div>
+
+  <div class="plan">
+    <div class="room room{{i}}" *ngFor="let room of rooms; let i = index">
+      <img class="room-img" src="../../assets/images/{{room.image}}"/>
+      <div class="room-header">
+        <div>
+          <div class="room-title">{{room.name}}</div>
+          <div *ngIf="room.participants !== undefined" class="room-num-of-participants">
+            Participants: {{room.participants.length}}</div>
+        </div>
+        <div class="room-actions">
+          <a target="_blank" href="{{room.zoomUrl}}"><img src="../../assets/images/zoom-icon.jpg"/> Join zoom</a>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div *ngIf="room.participants === undefined" class="attenders-loading">
+        <img src="../../assets/images/loading.gif"/>
+      </div>
+      <div *ngIf="room.participants !== undefined" class="room-attenders scrollbar">
+        <ul>
+          <li *ngFor="let participant of room.participants; let j = index">
+            <img *ngIf="participant.avatar === undefined" src="../../assets/images/avatars/default.png"/>
+            <img *ngIf="participant.avatar !== undefined" src="{{participant.avatar}}"/>
+            <div>{{participant.user_name}}</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
