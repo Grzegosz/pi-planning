@@ -1,10 +1,10 @@
-$banner-height: 460px;
+$banner-height: 660px;
 $top-height: 80px;
 $actions-height: 40px;
 $hsbc-red-primary: #DB0011;
-$page-width: 1250px;
+$page-width: 1270px;
 
-.page-overlay{
+.page-overlay {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -46,7 +46,7 @@ $page-width: 1250px;
         color: #747474;
       }
 
-      li.active{
+      li.active {
         color: #000000;
       }
 
@@ -97,37 +97,46 @@ $page-width: 1250px;
         margin-top: 50px;
       }
 
-      .scheduler{
-        display: flex;
+      .scheduler {
         font-family: UniversNext-light;
 
-        .scheduler-day{
-          width: 300px;
-          margin-right: 20px;
+        .scheduler-day {
 
-          .title{
-            font-size: 20px;
+          .title {
+            font-size: 23px;
           }
 
-          .divider{
-            margin-top:10px;
+          .divider {
+            margin-top: 15px;
+            margin-bottom: 20px;
             width: 200px;
             border-bottom: 1px solid #3d3d3d;
           }
 
-          ul{
-            padding: 0;
-            list-style: none;
-          }
+          table {
+            margin-bottom: 40px;
 
-          li{
-            padding-bottom: 10px;
+            thead {
+              td {
+                font-family: UniversNext;
+                min-width: 100px;
+                background-color: #383838;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-weight: bold;
+              }
+            }
 
-            .hour{
-              display: inline-block;
-              width: 40px;
-              text-align: right;
-              margin-right: 15px;
+            td {
+              font-size: 15px;
+              font-family: UniversNext-thin;
+              background-color: #2f2f2f;
+              padding: 7px;
+            }
+
+            ol {
+              padding: 0;
+              margin-left: 20px;
             }
           }
 
@@ -151,10 +160,10 @@ $page-width: 1250px;
 
   .banner-text {
     position: absolute;
-    width: 1250px;
+    width: 1270px;
     z-index: 2;
     text-align: left;
-    top: 175px;
+    top: 275px;
     left: 0;
     right: 0;
     margin: auto;

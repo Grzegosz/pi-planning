@@ -1,44 +1,114 @@
 [
   {
     "id": 1,
-    "name": "Arctovsky",
+    "name": "Bahamas",
     "zoomUrl": "https://us04web.zoom.us/j/2019373634",
     "meetingId": "123",
-    "image": "room1.jpg"
+    "image": "bahamas.jpeg"
   },
   {
     "id": 2,
-    "name": "Scott Base",
+    "name": "Bali",
     "zoomUrl": "https://us04web.zoom.us/j/2019373634",
     "meetingId": "123213",
-    "image": "room2.jpg"
+    "image": "bali.jpg"
   },
   {
     "id": 3,
-    "name": "Blonia",
+    "name": "Barbados",
     "zoomUrl": "https://us04web.zoom.us/j/2019373634",
     "meetingId": "123",
-    "image": "room3.jpg"
+    "image": "barbados.jpg"
   },
   {
     "id": 4,
-    "name": "Krakowskie Przedmiescie",
+    "name": "Bermuda",
     "zoomUrl": "https://us04web.zoom.us/j/2019373634",
     "meetingId": "234",
-    "image": "room1.jpg"
+    "image": "bermuda.jpg"
   },
   {
     "id": 5,
-    "name": "Blef room",
+    "name": "Bora Bora",
     "zoomUrl": "https://us04web.zoom.us/j/2019373634",
     "meetingId": "234",
-    "image": "room2.jpg"
+    "image": "bora_bora.jpg"
   },
   {
     "id": 6,
-    "name": "Blue Fin 602",
+    "name": "Fiji",
     "zoomUrl": "https://us04web.zoom.us/j/2019373634",
     "meetingId": "123213",
-    "image": "room3.jpg"
+    "image": "fiji.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Hawaii",
+    "zoomUrl": "https://us04web.zoom.us/j/2019373634",
+    "meetingId": "123213",
+    "image": "hawaii.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Maldives",
+    "zoomUrl": "https://us04web.zoom.us/j/2019373634",
+    "meetingId": "123213",
+    "image": "maldives.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Martinique",
+    "zoomUrl": "https://us04web.zoom.us/j/2019373634",
+    "meetingId": "123213",
+    "image": "martinique.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Mauritius",
+    "zoomUrl": "https://us04web.zoom.us/j/2019373634",
+    "meetingId": "123213",
+    "image": "mauritius.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Palau",
+    "zoomUrl": "https://us04web.zoom.us/j/2019373634",
+    "meetingId": "123213",
+    "image": "palau.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Phuket",
+    "zoomUrl": "https://us04web.zoom.us/j/2019373634",
+    "meetingId": "123213",
+    "image": "phuket.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Saint Lucia",
+    "zoomUrl": "https://us04web.zoom.us/j/2019373634",
+    "meetingId": "123213",
+    "image": "saint_lucia.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Seyshelles",
+    "zoomUrl": "https://us04web.zoom.us/j/2019373634",
+    "meetingId": "123213",
+    "image": "seyshelles.png"
+  },
+  {
+    "id": 15,
+    "name": "Tahiti",
+    "zoomUrl": "https://us04web.zoom.us/j/2019373634",
+    "meetingId": "123213",
+    "image": "tahiti.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Zanzibar",
+    "zoomUrl": "https://us04web.zoom.us/j/2019373634",
+    "meetingId": "123213",
+    "image": "zanzibar.jpg"
   }
 ]
