@@ -5,13 +5,20 @@
         <img src="../../assets/images/hsbc-logo.svg"/>
         <ul class="top-menu">
           <li (click)="onMenuSelected(1)" [ngClass]="{'active': selectedMenu===1}">
-            How to connect?
+            Objectives
           </li>
           <li (click)="onMenuSelected(2)" [ngClass]="{'active': selectedMenu===2}">
+            Rules
+          </li>
+          <li (click)="onMenuSelected(3)" [ngClass]="{'active': selectedMenu===3}">
+            How to connect?
+          </li>
+          <li (click)="onMenuSelected(4)" [ngClass]="{'active': selectedMenu===4}">
             Scheduler
           </li>
         </ul>
       </div>
+
       <div class="top-menu-details" *ngIf="selectedMenu > 0">
         <div class="top-menu-details-container">
           <div class="close-icon">
@@ -20,6 +27,35 @@
 
           <div *ngIf="selectedMenu === 1" class="top-menu-content">
             <div class="title">
+              Increment Planning Objectives
+            </div>
+            <div class="text objectives">
+              <ul>
+                <li>Demo's & Sharing by the Teams</li>
+                <li>Retrospective</li>
+                <li>Retrospective</li>
+                <li>Retrospective</li>
+                <li>Retrospective</li>
+                <li>Retrospective</li>
+              </ul>
+            </div>
+          </div>
+
+          <div *ngIf="selectedMenu === 2" class="top-menu-content">
+            <div class="title">
+              Ground Rules
+            </div>
+            <div class="text rules">
+              <li>Retrospective</li>
+              <li>Retrospective</li>
+              <li>Retrospective</li>
+              <li>Retrospective</li>
+              <li>Retrospective</li>
+            </div>
+          </div>
+
+          <div *ngIf="selectedMenu === 3" class="top-menu-content">
+            <div class="title">
               How to connect?
             </div>
             <div class="text">
@@ -27,7 +63,7 @@
             </div>
           </div>
 
-          <div *ngIf="selectedMenu === 2" class="top-menu-content">
+          <div *ngIf="selectedMenu === 4" class="top-menu-content">
             <div class="title">
               Scheduler
             </div>
