@@ -6,5 +6,6 @@ export interface Room {
   zoomUrl: string;
   meetingId: string;
   image: string;
+  main?: boolean;
   participants?: Array<Participant>;
 }

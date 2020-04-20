@@ -1,10 +1,11 @@
 [
   {
     "id": 1,
-    "name": "Bahamas",
+    "name": "Hawaii",
     "zoomUrl": "https://us04web.zoom.us/j/2019373634",
-    "meetingId": "123",
-    "image": "bahamas.jpeg"
+    "meetingId": "123213",
+    "image": "hawaii.jpg",
+    "main": true
   },
   {
     "id": 2,
@@ -43,10 +44,10 @@
   },
   {
     "id": 7,
-    "name": "Hawaii",
+    "name": "Bahamas",
     "zoomUrl": "https://us04web.zoom.us/j/2019373634",
     "meetingId": "123213",
-    "image": "hawaii.jpg"
+    "image": "bahamas.jpeg"
   },
   {
     "id": 8,
@@ -59,7 +60,7 @@
     "id": 9,
     "name": "Martinique",
     "zoomUrl": "https://us04web.zoom.us/j/2019373634",
-    "meetingId": "123213",
+    "meetingId": "123",
     "image": "martinique.jpg"
   },
   {

@@ -10,10 +10,7 @@
           <li (click)="onMenuSelected(2)" [ngClass]="{'active': selectedMenu===2}">
             Rules
           </li>
-          <li (click)="onMenuSelected(3)" [ngClass]="{'active': selectedMenu===3}">
-            How to connect?
-          </li>
-          <li (click)="onMenuSelected(4)" [ngClass]="{'active': selectedMenu===4}">
+          <li (click)="onMenuSelected(3)" [ngClass]="{'active': selectedMenu===4}">
             Scheduler
           </li>
         </ul>
@@ -55,15 +52,6 @@
           </div>
 
           <div *ngIf="selectedMenu === 3" class="top-menu-content">
-            <div class="title">
-              How to connect?
-            </div>
-            <div class="text">
-              You need to click to room Zoom icon. Moze jakis obrazek tutaj? Jakas instrukcja jak polaczyc sie?
-            </div>
-          </div>
-
-          <div *ngIf="selectedMenu === 4" class="top-menu-content">
             <div class="title">
               Scheduler
             </div>

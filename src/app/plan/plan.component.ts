@@ -16,7 +16,9 @@ export class PlanComponent implements OnInit {
   }
 
   rooms: Array<Room> = roomsData;
+  filteredRooms: Array<Room> = this.rooms;
   avatars: Array<Avatar> = avatarsData;
+  search: string;
 
   ngOnInit() {
     this.refreshData();
@@ -38,6 +40,8 @@ export class PlanComponent implements OnInit {
           },
           error => console.log('Error!', error));
     });
+
+    this.applySearch();
   }
 
   resolveAvatarLocation(avatar) {
@@ -46,5 +50,23 @@ export class PlanComponent implements OnInit {
     }
 
     return avatar;
+  }
+
+  onSearchKeyup(event: any) {
+    this.search = event.target.value;
+    this.applySearch();
+  }
+
+  applySearch() {
+    this.filteredRooms = [];
+    this.rooms.forEach(room => {
+      if (typeof this.search !== 'undefined' && this.search.length > 0) {
+        if (room.participants.find(p => p.user_name.includes(this.search))) {
+          this.filteredRooms.push(room);
+        }
+      } else {
+        this.filteredRooms.push(room);
+      }
+    });
   }
 }
